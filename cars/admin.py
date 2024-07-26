@@ -15,6 +15,7 @@ class CarAdmin(admin.ModelAdmin):
     list_editable = ('is_featured', )
 
     search_fields = ('id', 'car_title', 'city', 'model', 'body_style')
+    list_filter = ('city', 'model', 'body_style', 'fuel_type')
 
 # Register your models here.
 admin.site.register(Car, CarAdmin)
