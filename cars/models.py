@@ -80,13 +80,6 @@ class Car(models.Model):
         ('Bluetooth Handset', 'Bluetooth Handset'),
     )
 
-    door_choices = (
-        ('2', '2'),
-        ('3', '3'),
-        ('4', '4'),
-        ('5', '5'),
-        ('6', '6'),
-    )
 
     car_title = models.CharField(max_length=255)
     state = models.CharField(choices=state_choice, max_length=100)
