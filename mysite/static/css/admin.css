@@ -27,3 +27,7 @@ div.breadcrumbs{
 a:link, a:visited{
     color: #1c1f1f;
 }
+
+.theme-toggle svg.theme-icon-when-auto, .theme-toggle svg.theme-icon-when-dark, .theme-toggle svg.theme-icon-when-light{
+    color: #1c1f1f;
+}
