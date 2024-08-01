@@ -9,6 +9,7 @@ class Contact(models.Model):
     customer_need = models.CharField(max_length=100)
     car_title = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100, default='Unknown')
     email = models.EmailField(max_length=100)
     phone = models.EmailField(max_length=100)
     message = models.TextField(blank=True)
