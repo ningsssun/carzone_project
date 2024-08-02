@@ -173,7 +173,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'monica05200320@gmail.com'
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = 'lixjareoxtwwebay'
+EMAIL_HOST_PASSWORD = 'XXXXXXX'
 
 
 # whitenoise setting
