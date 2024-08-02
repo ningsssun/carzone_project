@@ -93,6 +93,16 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carzone_db',
+        'USER': 'postgres',
+        'PASSWORD': 'hcszsn414414S.',
+        'HOST': 'localhost',
+    }
+}'''
+
 DATABASES = {'default': dj_database_url.config(default='postgres://postgres:qWerty@123@localhost/carzone_db')}
 
 
@@ -163,6 +173,7 @@ EMAIL_HOST_PASSWORD = 'lixjareoxtwwebay'
 
 # whitenoise setting
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
 # Default primary key field type
