@@ -2594,6 +2594,15 @@ input[type=checkbox]:checked + label:before {
 .car-model-2 img{
     width: 100%;
 }
+
+#inquiryModal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: auto;  /* Adjust the width as necessary, or remove if full width is not required */
+    max-width: 350px; /* Optional: constrain the modal width if it's too wide */
+    z-index: 1050; /* Ensures it stays on top of other content; adjust according to your z-index scale */
+}
 /** MODAL BODY DESIGN ENDED **/
 
 /** Price box start**/
