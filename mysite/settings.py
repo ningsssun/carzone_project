@@ -103,7 +103,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
     }
 }'''
 
-DATABASES = {'default': dj_database_url.config(default='postgres://postgres:qWerty@123@localhost/carzone_db')}
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL', 'postgres://postgres:qWerty@123@localhost/carzone_db')
+    )
+}
 
 
 # Password validation
@@ -147,6 +151,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mysite/static'),
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Media settings
